@@ -1,0 +1,281 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+    background-color: #dfdfdf;
+}
+
+/* =============== top nav ==================== */
+.top-nav {
+    max-width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 47px;
+    overflow: hidden;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.616);
+    z-index: 3;
+    background-color: #fff; /* interesante #0061bd; */
+}
+
+#menu-bars-button {
+    display: none;
+    color: #975f16;
+    margin-right: 5px;
+}
+
+/* nav items like: logo, home, posts, about */
+#nav-elements {
+    display: flex;
+    align-items: center;
+    padding-right: 5px;
+}
+
+#logo a {
+    color: #975f16;
+}
+
+/* config for nav and user lists */
+#nav-elements ul, #user-elements ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+/* default config for nav */
+#nav-elements ul > li {
+    margin: auto 23px;
+}
+
+/* nav elements config */
+#nav-elements li a {
+    color: gray;
+}
+
+#nav-elements li .active {
+    font-weight: bold;
+    color: #975f16;
+}
+
+#nav-elements li > a:hover {
+    color: #975f16;
+}
+
+/* sarch form config*/
+#sarch-form {
+    width: 587px;
+    transition: width .2s ease-in-out;
+}
+
+#sarch-bar--background {
+    display: flex;
+    border-radius: 2px;
+    overflow: hidden;
+    padding: 3px 12px;
+    /* background-color: #5C73F2; */
+    background-color: #975f1673;
+}
+
+#sarch-input {
+    width: 90%;
+    text-align: left;
+    color: #975f16;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+#sarch-input::placeholder {
+    font-style: italic;
+    font-weight: normal;
+    text-align: left;
+    color: #975f16;
+    padding: 5px;
+}
+
+#sarch-button {
+    font-size: 14pt;
+    color: #975f16;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+/* config for user lists items */
+#user-elements {
+    display: inline;
+    overflow: hidden;
+}
+
+#user-elements ul {
+    display: none;
+}
+
+#user-elements ul > li {
+    margin: auto 0px auto 23px;
+}
+
+#profile-info {
+    width: 80px;
+    display: flex;
+    align-items: center;
+}
+
+#profile-image {
+    /* display: none; */
+    width: 40px;
+    height: 40px;
+    /* border: 1px solid; */
+    margin: auto;
+    border-radius: 20px;
+    /* transform: translate(-30%, 0); */
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#profile-image img {
+    width: 100%;
+}
+
+/* ================ buttons ====================*/
+
+/* create button container */
+#create-button-container {
+    max-width: 100%;
+    display: flex;
+    position: sticky;
+    top: 0;
+    flex-direction: row-reverse;
+    border-bottom: 2px solid whitesmoke;
+    padding: 12px;
+    padding-right: 45px;
+    z-index: 1;
+    background-color: #ffffffcb;
+}
+
+/* default buttons configuration */
+.button-primary, .button-secondary, .button-success, .button-dangerous {
+    display: flex;
+    align-items: center;
+    height: 35px;
+    font-weight: bold;
+    font-size: 12pt;
+    text-align: center;
+    padding: 0px 12px;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: default;
+    box-sizing: border-box;
+}
+
+/* btn-primary */
+.button-primary {
+    color: #fff;
+    background-color:#23A9FC;
+}
+
+.button-primary:hover {
+    color: #fff;
+    background-color: #0c9ffa;
+}
+
+/* btn-secondary */
+.button-secondary {
+    color: #47b9ff;
+    border: 2px solid #47b9ff;
+}
+
+.button-secondary:hover {
+    color: #fff;
+    background-color: #47b9ff;
+}
+
+/* btn-success */
+.button-success {
+    color: #fff;
+    background-color: #71f18f;
+}
+
+.button-success:hover {
+    color: #fff;
+    background-color: #61d47c;
+}
+
+/* btn-dangerous */
+.button-dangerous {
+    color: #fff;
+    background-color: #ff0000;
+}
+
+.button-dangerous:hover {
+    color: #fff;
+    background-color: #e40000;
+}
+
+
+
+/* ================ main-container ====================*/
+.main-container, .main-container-d-flex {
+    width: 92%;
+    padding: 12px;
+    margin: 2% auto 0;
+    background-color: #fff;
+}
+
+.main-container-d-flex {
+    display: flex;
+}
+
+/* ================ responsividade ====================*/
+@media only screen and (max-width: 1225px) {
+    #sarch-form {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 1138px) {
+    #sarch-form {
+        width: 275px;
+    }
+}
+
+@media only screen and (max-width: 962px) {
+    /* .top-nav {
+        padding-left: 5%;
+    } */
+    #nav-elements ul {
+        display: none;
+    }
+    #menu-bars-button {
+        display: inline;
+    }
+    #sarch-form {
+        width: 487px;
+    }
+}
+
+@media only screen and (max-width: 905px) {
+    #sarch-form {
+        width: 400px;
+    }
+    #login-btn {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 731px) {
+    #user-elements {
+        display: none;
+    }
+    #sarch-form {
+        width: 487px;
+    }
+}
