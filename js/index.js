@@ -23,7 +23,7 @@ function slice_text(element, range) {
 // PT: recorta "título" com mais de 14 caracteres
 slice_text(bookTitle, 16)
 
-// EN: slice "username" with more than 11 characters;
+// EN: slice "username" with more than 9 characters;
 
 // PT: recorta "nome de usuário" com mais de 9 caracteres
 slice_text(bookOwnerUsername, 9)
