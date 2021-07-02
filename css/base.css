@@ -133,10 +133,8 @@ body {
     /* display: none; */
     width: 40px;
     height: 40px;
-    /* border: 1px solid; */
     margin: auto;
     border-radius: 20px;
-    /* transform: translate(-30%, 0); */
     overflow: hidden;
     cursor: pointer;
 }
@@ -246,9 +244,6 @@ body {
 }
 
 @media only screen and (max-width: 962px) {
-    /* .top-nav {
-        padding-left: 5%;
-    } */
     #nav-elements ul {
         display: none;
     }

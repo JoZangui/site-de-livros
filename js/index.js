@@ -5,21 +5,28 @@ let bookOwnerUsername = document.getElementsByClassName('owner-username');
 
 let commentIcon = document.getElementsByClassName('fa-comment-alt')
 
-// EN: "for" for very long titles
-// PT: "for" para percorrer todos os títulos
-for (let i = 0; i < bookTitle.length; i++) {
-    // se o título tiver mais de 14 caracteres então cortamos do 1º ao 14º cartacter
-    if (bookTitle[i].innerText.length > 14) {
-        bookTitle[i].text = bookTitle[i].text.slice(0, 14) + '...'
+
+function slice_text(element, range) {
+
+    for (let i = 0; i < element.length; i++) {
+        // EN: if the title has more than the number of characters specified in "range" then we cut from the 1st character to the character in the position of "range"
+
+        // PT: se o título tiver mais do que o número de caracteres especificado em "range" então cortamos desde o 1º cartacter até o caracter na posição de "range"
+        if (element[i].innerText.length > range) {
+            element[i].text = element[i].text.slice(0, range) + '...'
+        }
     }
 }
 
-for (let i = 0; i < bookOwnerUsername.length; i++) {
-    // console.log('Username: ' + bookOwnerUsername[i].text + '; ' + 'Tamanho do nome: ' + bookOwnerUsername[i].text.length)
-    if (bookOwnerUsername[i].innerText.length > 11) {
-        bookOwnerUsername[i].text = bookOwnerUsername[i].text.slice(0, 9) + '...'
-    }
-}
+// EN: slice "title" with more than 14 characters
+
+// PT: recorta "título" com mais de 14 caracteres
+slice_text(bookTitle, 16)
+
+// EN: slice "username" with more than 11 characters;
+
+// PT: recorta "nome de usuário" com mais de 9 caracteres
+slice_text(bookOwnerUsername, 9)
 
 for (let i = 0; i < commentIcon.length; i++) {
     commentIcon[i].addEventListener('mouseover', function() {
