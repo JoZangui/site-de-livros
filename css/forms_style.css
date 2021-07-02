@@ -1,0 +1,143 @@
+#form-container {
+    max-width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 12px;
+    /* background-color: #ebebeb; */
+}
+
+#form-container form {
+    width: 52%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 20px 18px;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+#image_size_recomend_container {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #464646;
+    padding: 12px;
+    overflow: hidden;
+    background-color: lightgray;
+}
+
+#cover-image-container {
+    width: 140px;
+    display: flex;
+    /* display: none; */
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#cover {
+    width: 140px;
+    height: 210px;
+    align-items: stretch;
+    overflow: hidden;
+}
+
+#cover img {
+    width: 100%;
+}
+
+#image-size-container {
+    width: 140px;
+    height: 210px;
+    display: none;
+    /* display: flex; */
+    align-items: stretch;
+    border: 1px solid;
+    padding: 12px;
+    background-color: gray;
+}
+
+#recomend-size {
+    border: 3px dotted white;
+    padding: 12px;
+    overflow: hidden;
+}
+
+#recomend-size h1 {
+    font-weight: normal;
+    font-size: xx-large;
+    text-align: center;
+    color: rgb(236, 235, 235);
+}
+
+#text {
+    width: 70%;
+    height: 270px;
+    /* border: 1px solid; */
+    padding: 12px;
+    overflow: auto;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+}
+
+hr {
+    border-color: lightgray;
+}
+
+#text p {
+    transform: translate(0, -10%);
+}
+
+#image_size_recomend_container input {
+    margin-top: 12px;
+}
+
+/* .text-input {
+    width: 50%;
+} */
+
+.text-input, textarea {
+    display: block;
+    width: 95%;
+    /* margin: auto; */
+    border: none;
+    padding: 12px;
+    background-color: lightgray;
+    resize: none;
+}
+
+.text-input::placeholder, textarea::placeholder {
+    font-size: 9pt;
+    font-style: italic;
+}
+
+#form-buttons-container {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    /* border: 1px solid; */
+    overflow: hidden;
+}
+
+#form-buttons-container button {
+    /* width: 30%; */
+    display: inline;
+    margin-right: 20px;
+    border: none;
+}
+
+@media only screen and (max-width: 1037px) {
+    #image_size_recomend_container {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 644px) {
+    #form-container form {
+        width: 92%;
+        align-items: center;
+    }
+}

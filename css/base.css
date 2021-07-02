@@ -163,6 +163,7 @@ body {
 
 /* default buttons configuration */
 .button-primary, .button-secondary, .button-success, .button-dangerous {
+    max-width: 197px;
     display: flex;
     align-items: center;
     height: 35px;

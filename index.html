@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>models</title>
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/forms_style.css">
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 </head>
@@ -39,12 +40,50 @@
             </ul>
         </div>
     </nav>
-    <div id="create-button-container">
+    <!-- <div id="create-button-container">
         <a href="#" class="button-secondary">Upload livro</a>
-    </div>
+    </div> -->
     
-    <div class="main-container">
+    <!-- <div class="main-container">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis non assumenda consequatur aut eaque ducimus dolorem asperiores recusandae illum deleniti nulla, eius corrupti distinctio, beatae molestias officia perferendis quo. Deleniti.</p>
+    </div> -->
+
+    <div id="form-container">
+        <form action="">
+            <div id="image_size_recomend_container">
+                <div id="cover-image-container">
+                    <div id="cover">
+                        <img id="cover-image" src="books_cover/CAPA-Dear-heart.jpg" alt="cover-image">
+                    </div>
+                    <small id="actual-size">Tamanho actual </small>
+                </div>
+                <div id="image-size-container">
+                    <div id="recomend-size">
+                        <h1>140px 210px</h1>
+                    </div>
+                </div>
+                <div id="text">
+                    <p>
+                        Recomendamos que a imagem de capa tenha 140px de largura e 210px de altura para uma melhor resolução e enquadramento
+                    </p>
+                    <hr>
+                    <p>
+                        <b style="color: red;">ATENÇÃO:</b> Antes de fazer o upload do arquivo por favor tenha em atenção as leis de direitos autorais, não nos responsabilizamos por quaisquer transtornos relacionados a partilhas indevidas de conteudos não autorizado
+                    </p>
+                </div>
+                <input type="file" id="upload_button">
+            </div>
+            <br>
+            <label for="">Titulo:</label>
+            <input type="text" class="text-input" placeholder="type here The book title">
+            <br>
+            <label for="">Contexto do livro:</label>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Type here the book's context"></textarea>
+            <div id="form-buttons-container">
+                <button type="submit" class="button-success">Upload livro</button>
+                <a href="#" class="button-dangerous">Cancelar</a>
+            </div>
+        </form>
     </div>
 </body>
 </html>
