@@ -1,0 +1,141 @@
+/* 
+    Adding some customizations to id "#main-container" that belonging to file "base.css"
+*/
+#main-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+/* book container */
+.book {
+    width: 188px;
+    height: 324px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 3% 7px;
+    /* margin: 27px; */
+    /* margin: 15px 25px; */
+    padding: 12px;
+    /* border: 1px solid orangered; */
+    box-sizing: border-box;
+    overflow: hidden;
+    /* background-color: white; */
+}
+
+.book-cover {
+    width: 165px;
+    height: 205px;
+    /* border: 1px solid orange; */
+    align-self: center;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.book-cover img {
+    width: 100%;
+}
+
+/* 
+    .info is a book information container:
+        - title;
+        - owner;
+        - rate point;
+        - upload date
+*/
+.info {
+    height: 70px;
+    /* border: 1px solid; */
+    overflow: hidden;
+    /* display: none; */
+}
+
+.title {
+    margin-top: 0px;
+}
+
+.title h1 {
+    font-family: 'Roboto';
+    font-size: medium;
+    font-weight: bold;
+    margin: 8px 0;
+    padding: 0;
+}
+
+.title h1:hover {
+    text-decoration: underline;
+}
+
+.title h1 a {
+    color: #975f16;
+}
+
+
+.owner-info_date-info {
+    /* height: 10px; */
+    display: flex;
+    align-items: center;
+    /* border: 1px solid; */
+    overflow: hidden;
+}
+
+.book-profile-image {
+    width: 18%;
+    height: 28px;
+    margin-right: 5%;
+    /* border: 1px solid orangered; */
+    border-radius: 26px;
+    overflow: hidden;
+}
+
+.book-profile-image img {
+    width: 100%;
+}
+
+.owner-info_date-info small {
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-start; */
+    /* font-weight: bold; */
+    font-size: smaller;
+}
+
+.owner-info_date-info small a {
+    font-size: small;
+    /* font-weight: bold; */
+    font-style: italic;
+    color: gray;
+}
+
+.owner-info_date-info small a:hover {
+    text-decoration: underline;
+}
+
+.owner-info_date-info small span {
+    display: none;
+    font-size: smaller;
+    color: darkgray;
+}
+
+.owner {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    /* text-align: right; */
+    /* border: 1px solid; */
+}
+
+.owner i {
+    color: goldenrod;
+}
+
+.fa-comment-alt {
+    font-size: medium;
+}
+
+@media only screen and (max-width: 465px) {
+    #main-container {
+        justify-content: center;
+    }   
+}

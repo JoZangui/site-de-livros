@@ -224,16 +224,13 @@ body {
 
 
 /* ================ main-container ====================*/
-.main-container, .main-container-d-flex {
+#main-container {
     width: 92%;
     padding: 12px;
     margin: 2% auto 0;
     background-color: #fff;
 }
 
-.main-container-d-flex {
-    display: flex;
-}
 
 /* ================ responsividade ====================*/
 @media only screen and (max-width: 1225px) {

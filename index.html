@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>models</title>
+    <!-- my styles -->
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/forms_style.css">
+    <link rel="stylesheet" href="css/index.css">
+
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 </head>
@@ -14,9 +17,9 @@
     <nav class="top-nav">
         <h1 id="menu-bars-button"><i class="fas fa-bars"></i></h1>
         <div id="nav-elements">
-            <h1 id="logo"><a href="">Datlo</a></h1>
+            <h1 id="logo"><a href="index.html">Datlo</a></h1>
             <ul>
-                <li><a href="" class="active">Books</a></li>
+                <li><a href="index.html" class="active">Books</a></li>
                 <li><a href="">Posts</a></li>
                 <li><a href="">About</a></li>
             </ul>
@@ -30,7 +33,7 @@
         <div id="user-elements">
             <div id="profile-info">
                 <div id="profile-image">
-                    <img src="images/Atos_23__11__Deus_me_de_Força_Para_Continuar_Mqo4rri.jpeg" alt="profile-image" title="Joaquim">
+                    <img src="image/Atos_23__11__Deus_me_de_Força_Para_Continuar_Mqo4rri.jpeg" alt="profile-image" title="Joaquim">
                 </div>
                 <i class="fas fa-sort-down"></i>
             </div>
@@ -40,50 +43,294 @@
             </ul>
         </div>
     </nav>
-    <!-- <div id="create-button-container">
-        <a href="#" class="button-secondary">Upload livro</a>
-    </div> -->
-    
-    <!-- <div class="main-container">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis non assumenda consequatur aut eaque ducimus dolorem asperiores recusandae illum deleniti nulla, eius corrupti distinctio, beatae molestias officia perferendis quo. Deleniti.</p>
-    </div> -->
-
-    <div id="form-container">
-        <form action="">
-            <div id="image_size_recomend_container">
-                <div id="cover-image-container">
-                    <div id="cover">
-                        <img id="cover-image" src="books_cover/CAPA-Dear-heart.jpg" alt="cover-image">
-                    </div>
-                    <small id="actual-size">Tamanho actual </small>
-                </div>
-                <div id="image-size-container">
-                    <div id="recomend-size">
-                        <h1>140px 210px</h1>
-                    </div>
-                </div>
-                <div id="text">
-                    <p>
-                        Recomendamos que a imagem de capa tenha 140px de largura e 210px de altura para uma melhor resolução e enquadramento
-                    </p>
-                    <hr>
-                    <p>
-                        <b style="color: red;">ATENÇÃO:</b> Antes de fazer o upload do arquivo por favor tenha em atenção as leis de direitos autorais, não nos responsabilizamos por quaisquer transtornos relacionados a partilhas indevidas de conteudos não autorizado
-                    </p>
-                </div>
-                <input type="file" id="upload_button">
-            </div>
-            <br>
-            <label for="">Titulo:</label>
-            <input type="text" class="text-input" placeholder="type here The book title">
-            <br>
-            <label for="">Contexto do livro:</label>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Type here the book's context"></textarea>
-            <div id="form-buttons-container">
-                <button type="submit" class="button-success">Upload livro</button>
-                <a href="#" class="button-dangerous">Cancelar</a>
-            </div>
-        </form>
+    <div id="create-button-container">
+        <a href="upload_form.html" class="button-secondary">Upload livro</a>
     </div>
+    
+    <div id="main-container">
+        <!-- livro 1 -->
+        <div class="book">
+            <!-- book cover (img) -->
+            <div class="book-cover">
+                <img src="books_cover/Capa_Um-dia-Filme_WEB1.jpg" alt="">
+            </div>
+            <!-- book information -->
+            <div class="info">
+                <!-- book title -->
+                <div class="title" title="Um dia">
+                    <h1><a href="#" class="title-text">Um dia</a></h1>
+                </div>
+                <!-- owner info -->
+                <div class="owner-info_date-info">
+                    <div class="book-profile-image">
+                        <a href="#"><img src="image/image_4.jpg" alt="profile image"></a>
+                    </div>
+                    <div class="owner">
+                        <small title="Anna Froid">
+                            <a href="#" class="owner-username">Anna Froid</a>
+                            <span>30 fev</span>
+                        </small>
+                        <!-- <small>|</small> -->
+                        <small style="color: gray;" title="classificação de: 4,5 de 5 estrelas"> 4,2 <i class="fas fa-star"></i></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- livro 2 -->
+        <div class="book">
+            <!-- book cover (img) -->
+            <div class="book-cover">
+                <img src="books_cover/9d1c288e3f3b28ba77df04418fc57b20.jpg" alt="">
+            </div>
+            <!-- book information -->
+            <div class="info">
+                <!-- book title -->
+                <div class="title" title="Morri para viver">
+                    <h1><a href="#" class="title-text">Morri para viver</a></h1>
+                </div>
+                <!-- owner info -->
+                <div class="owner-info_date-info">
+                    <div class="book-profile-image">
+                        <a href="#"><img src="image/image_4.jpg" alt="profile image"></a>
+                    </div>
+                    <div class="owner">
+                        <small title="Anna Froid">
+                            <a href="#" class="owner-username">Anna Froid</a>
+                            <span>30 fev</span>
+                        </small>
+                        <!-- <small>|</small> -->
+                        <small style="color: gray;" title="classificação de: 4,5 de 5 estrelas"> 4,4 <i class="fas fa-star"></i></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- livro 3 -->
+        <div class="book">
+            <!-- book cover (img) -->
+            <div class="book-cover">
+                <img src="books_cover/Assassin's_Creed_The_Chain_Cover.jpg" alt="">
+            </div>
+            <!-- book information -->
+            <div class="info">
+                <!-- book title -->
+                <div class="title">
+                    <h1><a href="#" title="Assassin's Creed The chain" class="title-text">Assassin's Creed The Chain</a></h1>
+                </div>
+                <!-- owner info -->
+                <div class="owner-info_date-info">
+                    <div class="book-profile-image">
+                        <a href="#"><img src="image/image_4.jpg" alt="profile image"></a>
+                    </div>
+                    <div class="owner">
+                        <small title="Anna Froid">
+                            <a href="#" class="owner-username">Anna Froid</a>
+                            <span>30 fev</span>
+                        </small>
+                        <!-- <small>|</small> -->
+                        <small style="color: gray;" title="classificação de: 4,5 de 5 estrelas"> 4,5 <i class="fas fa-star"></i></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="book">
+            <!-- book cover (img) -->
+            <div class="book-cover">
+                <img src="books_cover/Capa_Deus-Esta-No-Controle_Devo11x15.jpg" alt="">
+            </div>
+            <!-- book information -->
+            <div class="info">
+                <!-- book title -->
+                <div class="title" title="Deus está no controle">
+                    <h1><a href="#" class="title-text">Deus está no controle</a></h1>
+                </div>
+                <!-- owner info -->
+                <div class="owner-info_date-info">
+                    <div class="book-profile-image">
+                        <a href="#"><img src="image/image_4.jpg" alt="profile image"></a>
+                    </div>
+                    <div class="owner">
+                        <small title="Wander Antunes">
+                            <a href="#" class="owner-username">Wander Antunes</a>
+                            <span>30 fev</span>
+                        </small>
+                        <!-- <small>|</small> -->
+                        <small style="color: gray;" title="classificação de: 4,5 de 5 estrelas"> 5 <i class="fas fa-star"></i></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="book">
+            <!-- book cover (img) -->
+            <div class="book-cover">
+                <img src="books_cover/CAPA-Dear-heart.jpg" alt="">
+            </div>
+            <!-- book information -->
+            <div class="info">
+                <!-- book title -->
+                <div class="title" title="Dear heart eu odeio você">
+                    <h1><a href="#" class="title-text">Dear heart eu odeio você</a></h1>
+                </div>
+                <!-- owner info -->
+                <div class="owner-info_date-info">
+                    <div class="book-profile-image">
+                        <a href="#"><img src="image/default.jpg" alt="profile image"></a>
+                    </div>
+                    <div class="owner">
+                        <small title="Anna Froid">
+                            <a href="#" class="owner-username">Anna Froid</a>
+                            <span>30 fev</span>
+                        </small>
+                        <!-- <small>|</small> -->
+                        <small style="color: gray;" title="classificação de: 4,5 de 5 estrelas"> 3,5 <i class="fas fa-star"></i></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="book">
+            <!-- book cover (img) -->
+            <div class="book-cover">
+                <img src="books_cover/Harry_Potter_Sorc.jpg" alt="">
+            </div>
+            <!-- book information -->
+            <div class="info">
+                <!-- book title -->
+                <div class="title" title="Harry Potter and the Sorcerer's stone">
+                    <h1><a href="#" class="title-text">Harry Potter and the Sorcerer's stone</a></h1>
+                </div>
+                <!-- owner info -->
+                <div class="owner-info_date-info">
+                    <div class="book-profile-image">
+                        <a href="#"><img src="image/image_4.jpg" alt="profile image"></a>
+                    </div>
+                    <div class="owner">
+                        <small title="Anna Froid">
+                            <a href="#" class="owner-username">Anna Froid</a>
+                            <span>30 fev</span>
+                        </small>
+                        <!-- <small>|</small> -->
+                        <small style="color: gray;" title="classificação de: 4,5 de 5 estrelas"> 4,5 <i class="fas fa-star"></i></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="book">
+            <!-- book cover (img) -->
+            <div class="book-cover">
+                <img src="books_cover/wonder.jpg" alt="">
+            </div>
+            <!-- book information -->
+            <div class="info">
+                <!-- book title -->
+                <div class="title" title="Wonder">
+                    <h1><a href="#" class="title-text">Wonder</a></h1>
+                </div>
+                <!-- owner info -->
+                <div class="owner-info_date-info">
+                    <div class="book-profile-image">
+                        <a href="#"><img src="image/default.jpg" alt="profile image"></a>
+                    </div>
+                    <div class="owner">
+                        <small title="Anna Froid">
+                            <a href="#" class="owner-username">Anna Froid</a>
+                            <span>30 fev</span>
+                        </small>
+                        <!-- <small>|</small> -->
+                        <small style="color: gray;" title="classificação de: 4,5 de 5 estrelas"> 4,5 <i class="fas fa-star"></i></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="book">
+            <!-- book cover (img) -->
+            <div class="book-cover">
+                <img src="books_cover/Historia_da_Ciencia.jpg" alt="">
+            </div>
+            <!-- book information -->
+            <div class="info">
+                <!-- book title -->
+                <div class="title" title="A história da Ciência para quem tem pressa">
+                    <h1><a href="#" class="title-text">A história da Ciência para quem tem pressa</a></h1>
+                </div>
+                <!-- owner info -->
+                <div class="owner-info_date-info">
+                    <div class="book-profile-image">
+                        <a href="#"><img src="image/image_4.jpg" alt="profile image"></a>
+                    </div>
+                    <div class="owner">
+                        <small title="Anna Froid">
+                            <a href="#" class="owner-username">Anna Froid</a>
+                            <span>30 fev</span>
+                        </small>
+                        <!-- <small>|</small> -->
+                        <small style="color: gray;" title="Adicionar comentário"> <a href=""><i class="far fa-comment-alt"></i></a></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="book">
+            <!-- book cover (img) -->
+            <div class="book-cover">
+                <img src="books_cover/imagem.jpg" alt="">
+            </div>
+            <!-- book information -->
+            <div class="info">
+                <!-- book title -->
+                <div class="title" title="Harry Potter e a pedra filosofal">
+                    <h1><a href="#" class="title-text">Harry Potter e a pedra filosofal</a></h1>
+                </div>
+                <!-- owner info -->
+                <div class="owner-info_date-info">
+                    <div class="book-profile-image">
+                        <a href="#"><img src="image/image_4.jpg" alt="profile image"></a>
+                    </div>
+                    <div class="owner">
+                        <small title="Anna Froid">
+                            <a href="#">Anna Froid</a>
+                            <span>30 fev</span>
+                        </small>
+                        <!-- <small>|</small> -->
+                        <small style="color: gray;" title="classificação de: 4,5 de 5 estrelas"> 4,5 <i class="fas fa-star"></i></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="book">
+            <!-- book cover (img) -->
+            <div class="book-cover">
+                <img src="books_cover/Isla-e-O-Final-Feliz.jpg" alt="">
+            </div>
+            <!-- book information -->
+            <div class="info">
+                <!-- book title -->
+                <div class="title" title="Isla e o Final Feliz">
+                    <h1><a href="#" class="title-text">Isla e o Final Feliz</a></h1>
+                </div>
+                <!-- owner info -->
+                <div class="owner-info_date-info">
+                    <div class="book-profile-image">
+                        <a href="#"><img src="image/image_4.jpg" alt="profile image"></a>
+                    </div>
+                    <div class="owner">
+                        <small title="Anna Froid">
+                            <a href="#">Anna Froid</a>
+                            <span>30 fev</span>
+                        </small>
+                        <!-- <small>|</small> -->
+                        <small style="color: gray;" title="Adicionar comentário" > <a href=""><i class="far fa-comment-alt"></i></a></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
 </body>
 </html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>models</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/forms_style.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+</head>
+<body>
+    <nav class="top-nav">
+        <h1 id="menu-bars-button"><i class="fas fa-bars"></i></h1>
+        <div id="nav-elements">
+            <h1 id="logo"><a href="index.html">Datlo</a></h1>
+            <ul>
+                <li><a href="index.html">Books</a></li>
+                <li><a href="">Posts</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+        </div>
+        <form action="#" method="POST" id="sarch-form">
+            <div id="sarch-bar--background">
+                <input type="text" name="" id="sarch-input" placeholder="pesquise no datlo.." maxlength="100">
+                <button id="sarch-button" type="submit"><i class="fas fa-search"></i></button>
+            </div>
+        </form>
+        <div id="user-elements">
+            <div id="profile-info">
+                <div id="profile-image">
+                    <img src="image/Atos_23__11__Deus_me_de_Força_Para_Continuar_Mqo4rri.jpeg" alt="profile-image" title="Joaquim">
+                </div>
+                <i class="fas fa-sort-down"></i>
+            </div>
+            <ul>
+                <li><a href="#" class="button-success" id="login-btn">Sign in</a></li>
+                <li><a href="#" class="button-secondary">Sign up</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="form-container">
+        <form action="">
+            <div id="image_size_recomend_container">
+                <div id="cover-image-container">
+                    <div id="cover">
+                        <img id="cover-image" src="books_cover/CAPA-Dear-heart.jpg" alt="cover-image">
+                    </div>
+                    <small id="actual-size">Tamanho actual </small>
+                </div>
+                <div id="image-size-container">
+                    <div id="recomend-size">
+                        <h1>140px 210px</h1>
+                    </div>
+                </div>
+                <div id="text">
+                    <p>
+                        Recomendamos que a imagem de capa tenha 140px de largura e 210px de altura para uma melhor resolução e enquadramento
+                    </p>
+                    <hr>
+                    <p>
+                        <b style="color: red;">ATENÇÃO:</b> Antes de fazer o upload do arquivo por favor tenha em atenção as leis de direitos autorais, não nos responsabilizamos por quaisquer transtornos relacionados a partilhas indevidas de conteudos não autorizado
+                    </p>
+                </div>
+                <input type="file" id="upload_button">
+            </div>
+            <br>
+            <label for="">Título:</label>
+            <input type="text" class="text-input" placeholder="type here The book title">
+            <br>
+            <label for="">Descrição do livro:</label>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Type here the book's context"></textarea>
+            <div id="form-buttons-container">
+                <button type="submit" class="button-success">Upload livro</button>
+                <a href="#" class="button-dangerous">Cancelar</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
