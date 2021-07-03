@@ -1,48 +1,46 @@
-var selectContainer, selectTag, a, b, c;
+var selectContainer, selectTag, selectedOptionDiv, optionsContainerDiv, OptionDiv;
 /*look for any elements with the class "select-container":*/
 selectContainer = document.getElementsByClassName("select-container");
 
 for (let i = 0; i < selectContainer.length; i++) {
-  selectTag = selectContainer[i].getElementsByTagName("select")[0]; // HTML select tag
+  selectTag = selectContainer[i].getElementsByTagName("select")[0]; // HTML select tag: <select>
+
   /*for each element, create a new DIV that will act as the selected item:*/
-  a = document.createElement("DIV");
-  a.setAttribute("class", "select-selected");
-  a.innerHTML = selectTag.options[selectTag.selectedIndex].innerHTML;
-  selectContainer[i].appendChild(a);
+  selectedOptionDiv = document.createElement("DIV");
+  selectedOptionDiv.setAttribute("class", "select-selected");
+  selectedOptionDiv.innerHTML = selectTag.options[selectTag.selectedIndex].innerHTML;
+  selectContainer[i].appendChild(selectedOptionDiv);
+
   /*for each element, create a new DIV that will contain the option list:*/
-  b = document.createElement("DIV");
-  b.setAttribute("class", "select-items select-hide");
+  optionsContainerDiv = document.createElement("DIV");
+  optionsContainerDiv.setAttribute("class", "select-items select-hide");
+
   for (let j = 1; j < selectTag.length; j++) {
     /*for each option in the original select element,
     create a new DIV that will act as an option item:*/
-    c = document.createElement("DIV");
-    c.innerHTML = selectTag.options[j].innerHTML;
-    c.addEventListener("click", function(e) {
-        /*when an item is clicked, update the original select box,
-        and the selected item:*/
-        var y, i, k, s, h, sl, yl;
-        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
-        sl = s.length;
-        h = this.parentNode.previousSibling;
-        for (i = 0; i < sl; i++) {
-          if (s.options[i].innerHTML == this.innerHTML) {
-            s.selectedIndex = i;
-            h.innerHTML = this.innerHTML;
-            y = this.parentNode.getElementsByClassName("same-as-selected");
-            yl = y.length;
-            for (k = 0; k < yl; k++) {
-              y[k].removeAttribute("class");
-            }
-            this.setAttribute("class", "same-as-selected");
-            break;
+    OptionDiv = document.createElement("DIV");
+    OptionDiv.innerHTML = selectTag.options[j].innerHTML;
+    OptionDiv.addEventListener("click", function(e) {
+      /*when an item is clicked, update the original select box,
+      and the selected item:*/
+      for (let i = 0; i < selectTag.length; i++) {
+        if (selectTag.options[i].innerHTML == this.innerHTML) {
+          selectTag.selectedIndex = i;
+          selectedOptionDiv.innerHTML = this.innerHTML;
+          sameAsSelected = this.parentNode.getElementsByClassName("same-as-selected");
+          for (let k = 0; k < sameAsSelected.length; k++) {
+            sameAsSelected[k].removeAttribute("class");
           }
+          this.setAttribute("class", "same-as-selected");
+          break;
         }
-        h.click();
+      }
+      selectedOptionDiv.click();
     });
-    b.appendChild(c);
+    optionsContainerDiv.appendChild(OptionDiv);
   }
-  selectContainer[i].appendChild(b);
-  a.addEventListener("click", function(e) {
+  selectContainer[i].appendChild(optionsContainerDiv);
+  selectedOptionDiv.addEventListener("click", function(e) {
       /*when the select box is clicked, close any other select boxes,
       and open/close the current select box:*/
       e.stopPropagation();
@@ -51,6 +49,7 @@ for (let i = 0; i < selectContainer.length; i++) {
       this.classList.toggle("select-arrow-active");
     });
 }
+
 function closeAllSelect(elmnt) {
   /*a function that will close all select boxes in the document,
   except the current select box:*/
