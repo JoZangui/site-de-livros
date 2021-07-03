@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 </head>
 <body>
-    <nav class="top-nav">
+    <nav id="top-nav">
         <h1 id="menu-bars-button"><i class="fas fa-bars"></i></h1>
         <div id="nav-elements">
             <h1 id="logo"><a href="index.html">Datlo</a></h1>
@@ -31,11 +31,8 @@
             </div>
         </form>
         <div id="user-elements">
-            <div id="profile-info">
-                <div id="profile-image">
-                    <img src="image/Atos_23__11__Deus_me_de_Força_Para_Continuar_Mqo4rri.jpeg" alt="profile-image" title="Joaquim">
-                </div>
-                <i class="fas fa-sort-down"></i>
+            <div id="profile-image">
+                <img src="image/Atos_23__11__Deus_me_de_Força_Para_Continuar_Mqo4rri.jpeg" alt="profile-image" title="Joaquim">
             </div>
             <ul>
                 <li><a href="#" class="button-success" id="login-btn">Sign in</a></li>
@@ -43,6 +40,19 @@
             </ul>
         </div>
     </nav>
+    <div id="dropdown-user-info">
+        <ul>
+            <li>
+                <a href="profile.html" title="Clique aqui para visualizar o seu perfil">View profile</a>
+            </li>
+            <li>
+                <a href="#" title="Clique aqui para editar o seu perfil">Edit profile</a>
+            </li>
+            <li>
+                <a href="login_form.html" title="Clique para terminar sessão">Logout</a>
+            </li>
+        </ul>
+    </div>
     <div id="create-button-container">
         <a href="upload_form.html" class="button-secondary">Upload livro</a>
     </div>

@@ -13,7 +13,7 @@ body {
 }
 
 /* =============== top nav ==================== */
-.top-nav {
+#top-nav {
     max-width: 100%;
     display: flex;  
     justify-content: space-between;
@@ -123,12 +123,6 @@ body {
     margin: auto 0px auto 23px;
 }
 
-#profile-info {
-    width: 80px;
-    display: flex;
-    align-items: center;
-}
-
 #profile-image {
     /* display: none; */
     width: 40px;
@@ -143,6 +137,54 @@ body {
     width: 100%;
 }
 
+#dropdown-user-info {
+    position: fixed;
+    top: 10%; /* top 15% */
+    right: 0%; /* right 2% */
+    border: 1px solid;
+    border-radius: 6px;
+    padding: 12px;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, .2);
+    z-index: 99;
+    background-color: #fff;
+}
+
+#dropdown-user-info ul {
+    padding: 0;
+    margin: 0;
+}
+
+#dropdown-user-info li {
+    list-style: none;
+    transition: background-color .2s ease-in;
+}
+
+#dropdown-user-info a {
+    display: block;
+    padding: 12px;
+}
+
+#dropdown-user-info li:hover {
+    background-color: #e7e7e7;
+}
+
+#dropdown-user-info li:nth-child(3):hover {
+    background-color: #ff4646;
+}
+
+#dropdown-user-info li:nth-child(3):hover > a {
+    color: white;
+}
+
+#dropdown-user-info a {
+    color: black;
+}
+
+#dropdown-user-info li:nth-child(3) > a {
+    font-weight: bold;
+    color: red;
+}
+
 /* ================ buttons ====================*/
 
 /* create button container */
@@ -154,7 +196,7 @@ body {
     flex-direction: row-reverse;
     border-bottom: 2px solid whitesmoke;
     padding: 12px;
-    padding-right: 45px;
+    padding-right: 46px;
     z-index: 1;
     background-color: #ffffffcb;
 }
@@ -223,7 +265,7 @@ body {
 
 /* ================ main-container ====================*/
 #main-container {
-    width: 92%;
+    width: 91%;
     padding: 12px;
     margin: 2% auto 0;
     background-color: #fff;
