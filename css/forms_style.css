@@ -108,7 +108,7 @@ hr {
 }
 
 .select-selected {
-    background-color: #975f16;
+    background-color: gray;
 }
 
 /*style the arrow inside the select element:*/
@@ -143,7 +143,7 @@ hr {
 /*style items (options):*/
 .select-items {
     position: absolute;
-    background-color: #975f16;
+    background-color: darkgray;
     top: 100%;
     left: 0;
     right: 0;
