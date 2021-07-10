@@ -1,18 +1,19 @@
+/* baixamos mais 5% a div#main-container em relação ao topo */
 #main-container {
-    margin-top: 5%;
+    margin-top: 65px;
 }
+/* container com as informações do usuário e o botão de editar */
 #profile-owner-info {
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 12px 30px;
-    /* border: 1px solid; */
     box-sizing: border-box;
 }
-#main-profile-image-container {
+/*  */
+#profile-image-username-container {
     display: flex;
     align-items: flex-start;
-    /* border: 1px solid; */
 }
 #main-profile-image {
     width: 140px;
@@ -40,23 +41,90 @@
     margin: 0;
     padding: 0;
 }
-
-#books-container {
-    width: 100%;
-    display: flex;
+.title {
+    padding: 0 30px;
+}
+.title small {
+    color: #C4C4C4;
+}
+#book-destaques-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 142px);
+    grid-gap: 0 42px;
     flex-wrap: wrap;
-    justify-content: flex-start;
+}
+#books-container {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 140px);
+    grid-gap: 19px 5.6%;
+}
+#books-container, #book-destaques-container {
+    width: 100%;
     margin: auto;
-    padding: 12px;
-    overflow: hidden;
-    /* border: 1px solid; */
+    padding: 30px;
     box-sizing: border-box;
 }
+
+
+.book-destaque {
+    width: 182px;
+    height: 319px;
+    /* border: 1px solid; */
+    margin-right: 87px;
+}
+
+.books-cover-destaque {
+    width: 162px;
+    height: 238px;
+}
+
+.book-destaque a {
+    font-size: large;
+}
+
 .book {
     width: 140px;
+    height: 263px;
+}
+
+.books-cover {
+    width: 140px;
     height: 204px;
-    border: 1px solid;
-    margin: 2% 1.2%;
-    padding: 12px;
+}
+
+.book, .book-destaque {
     box-sizing: border-box;
+    overflow: hidden;
+}
+
+.books-cover, .books-cover-destaque {
+    overflow: hidden;
+}
+
+.books-cover img, .books-cover-destaque img {
+    width: 100%;
+}
+
+.book a, .book-destaque a {
+    color: #1f1f1f;
+}
+
+@media only screen and (max-width:599px) {
+    #profile-owner-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    #profile-image-username-container {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+}
+@media only screen and (max-width:391px) {
+    #books-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
