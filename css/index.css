@@ -1,13 +1,43 @@
-/* 
-    Adding some customizations to id "#main-container" that belonging to file "base.css"
-*/
-#main-container {
+.pagination-container-top {
+    margin: 17px auto;
+}
+
+.pagination-container-bottom {
+    margin: 12px auto 12px;
+}
+
+.pagination-container {
+    text-align: center;
+}
+
+.pagination-container a {
+    color: #975F16;
+    border: 2px solid #975F16;
+    border-radius: 12px;
+    padding: 3px 12px;
+    transition: .2s ease;
+    background-color: #d4d4d4;
+}
+
+.pagination-container a:hover {
+    background-color: white;
+}
+
+.pagination-container b a {
+    width: 48px;
+    height: 48px;
+    /* border: none; */
+    border-radius: 4px;
+    padding: 3px 12px;
+    background-color: white;
+}
+
+/* book container */
+#books {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
 }
-
-/* book container */
 .book {
     width: 188px;
     height: 324px;
@@ -56,19 +86,18 @@
 }
 
 .title h1 {
-    font-family: 'Roboto';
     font-size: medium;
     font-weight: bold;
     margin: 8px 0;
     padding: 0;
 }
 
-.title h1:hover {
-    text-decoration: underline;
+.title h1 a {
+    color: #1f1f1f;
 }
 
-.title h1 a {
-    color: #975f16;
+.title h1:hover a {
+    color: black;
 }
 
 
@@ -103,8 +132,8 @@
 
 .owner-info_date-info small a {
     font-size: small;
-    /* font-weight: bold; */
-    font-style: italic;
+    font-weight: bold;
+    /* font-style: italic; */
     color: gray;
 }
 
@@ -135,7 +164,7 @@
 }
 
 @media only screen and (max-width: 465px) {
-    #main-container {
+    #books {
         justify-content: center;
     }   
 }

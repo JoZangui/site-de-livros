@@ -10,11 +10,12 @@
     padding: 12px 30px;
     box-sizing: border-box;
 }
-/*  */
+/* container com a imagem e o nome do usuário */
 #profile-image-username-container {
     display: flex;
     align-items: flex-start;
 }
+/* container da imagem do usuário */
 #main-profile-image {
     width: 140px;
     height: 134px;
@@ -28,6 +29,7 @@
 #main-profile-image img {
     width: 100%;
 }
+/* container com o nome de usuário e o email */
 #username {
     margin-left: 42px;
 }
@@ -41,10 +43,10 @@
     margin: 0;
     padding: 0;
 }
-.title {
+.section-title {
     padding: 0 30px;
 }
-.title small {
+.section-title small {
     color: #C4C4C4;
 }
 #book-destaques-container {
@@ -80,7 +82,7 @@
 }
 
 .book-destaque a {
-    font-size: large;
+    font-size: medium;
 }
 
 .book {
@@ -119,6 +121,9 @@
         flex-direction: column;
         align-items: center;
         margin-bottom: 30px;
+    }
+    .title {
+        text-align: center;
     }
 }
 @media only screen and (max-width:391px) {

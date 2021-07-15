@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/all_user_books.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <title>All books</title>
+</head>
+<body>
+    <nav id="top-nav">
+        <h1 id="menu-bars-button"><i class="fas fa-bars"></i></h1>
+        <div id="nav-elements">
+            <h1 id="logo"><a href="index.html">Datlo</a></h1>
+            <ul>
+                <li><a href="index.html">Books</a></li>
+                <li><a href="">Posts</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+        </div>
+        <form action="#" method="POST" id="sarch-form">
+            <div id="sarch-bar--background">
+                <input type="text" name="" id="sarch-input" placeholder="pesquise no datlo.." maxlength="100">
+                <button id="sarch-button" type="submit"><i class="fas fa-search"></i></button>
+            </div>
+        </form>
+        <div id="user-elements">
+            <div id="profile-image">
+                <img src="image/Atos_23__11__Deus_me_de_Força_Para_Continuar_Mqo4rri.jpeg" alt="profile-image" title="Joaquim">
+            </div>
+            <ul>
+                <li><a href="#" class="button-success" id="login-btn">Sign in</a></li>
+                <li><a href="#" class="button-secondary">Sign up</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="dropdown-user-info">
+        <ul>
+            <li>
+                <a href="profile.html" title="Clique aqui para visualizar o seu perfil">View profile</a>
+            </li>
+            <li>
+                <a href="#" title="Clique aqui para editar o seu perfil">Edit profile</a>
+            </li>
+            <li>
+                <a href="login_form.html" title="Clique para terminar sessão">Logout</a>
+            </li>
+        </ul>
+    </div>
+    <div id="create-button-container">
+        <a href="upload_form.html" class="button-secondary">Upload livro</a>
+    </div>
+    <div id="main-container">
+        <div id="profile-owner-info">
+            <div id="profile-image-username-container">
+                <h1 class="previous_page">
+                    <a href="profile.html">
+                        <i class="fas fa-arrow-circle-left"></i>
+                    </a>
+                </h1>&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+                <div id="main-profile-image">
+                    <a href="profile.html"><img src="image/image_4.jpg" alt="profile image"></a>
+                </div>
+                <div id="username">
+                    <h1><a href="profile.html">John Doe</a></h1>
+                    <h3>johndoe@email.com</h3>
+                </div>
+            </div>
+            <div id="follow-edit">
+                <!-- <a href="#" class="button-success">Seguir</a> -->
+                <a href="#" class="button-secondary">Editar perfil</a>
+            </div>
+        </div>
+        <br>
+        <div class="pagination-container pagination-container-top">
+            <span>
+                <b><a href="#">1</a></b>
+            </span>
+        </div>
+        <!-- index dos livros apresentados na actual página -->
+        <div class="section-title">
+            <h2>1 - 10 | 432</h2>
+            <hr>
+        </div>
+        <section id="books">
+            <!-- livro 1 -->
+            <div class="book">
+                <!-- book cover (img) -->
+                <div class="book-cover">
+                    <img src="books_cover/Capa_Um-dia-Filme_WEB1.jpg" alt="">
+                </div>
+                <!-- book information -->
+                <div class="info">
+                    <!-- book title -->
+                    <div class="title" title="Um dia">
+                        <h1><a href="#" class="title-text">Um dia</a></h1>
+                    </div>
+                    <!-- owner info -->
+                    <div class="owner-info_date-info">
+                        <div class="owner">
+                            <small class="post-date" style="color: #868686;"><b>15 jul, 2021</b></small>
+                            <small style="color: gray;" title="classificação de: 4,5 de 5 estrelas"><b>4.2</b> <i class="fas fa-star"></i></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- livro 2 -->
+            <div class="book">
+                <!-- book cover (img) -->
+                <div class="book-cover">
+                    <img src="books_cover/9d1c288e3f3b28ba77df04418fc57b20.jpg" alt="">
+                </div>
+                <!-- book information -->
+                <div class="info">
+                    <!-- book title -->
+                    <div class="title" title="Morri para viver">
+                        <h1><a href="#" class="title-text">Morri para viver</a></h1>
+                    </div>
+                    <!-- owner info -->
+                    <div class="owner-info_date-info">
+                        <div class="owner">
+                            <small class="post-date" style="color: #868686;"><b>15 jul, 2021</b></small>
+                            <small style="color: gray;" title="classificação de: 4,5 de 5 estrelas"><b>4.4</b> <i class="fas fa-star"></i></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- livro 3 -->
+            <div class="book">
+                <!-- book cover (img) -->
+                <div class="book-cover">
+                    <img src="books_cover/Assassin's_Creed_The_Chain_Cover.jpg" alt="">
+                </div>
+                <!-- book information -->
+                <div class="info">
+                    <!-- book title -->
+                    <div class="title">
+                        <h1><a href="#" title="Assassin's Creed The chain" class="title-text">Assassin's Creed The Chain</a></h1>
+                    </div>
+                    <!-- owner info -->
+                    <div class="owner-info_date-info">
+                        <div class="owner">
+                            <small class="post-date" style="color: #868686;"><b>15 jul, 2021</b></small>
+                            <small style="color: gray;" title="classificação de: 4,5 de 5 estrelas"><b>4.5</b> <i class="fas fa-star"></i></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="book">
+                <!-- book cover (img) -->
+                <div class="book-cover">
+                    <img src="books_cover/Capa_Deus-Esta-No-Controle_Devo11x15.jpg" alt="">
+                </div>
+                <!-- book information -->
+                <div class="info">
+                    <!-- book title -->
+                    <div class="title" title="Deus está no controle">
+                        <h1><a href="#" class="title-text">Deus está no controle</a></h1>
+                    </div>
+                    <!-- owner info -->
+                    <div class="owner-info_date-info">
+                        <div class="owner">
+                            <small class="post-date" style="color: #868686;"><b>15 jul, 2021</b></small>
+                            <small style="color: gray;" title="classificação de: 4,5 de 5 estrelas"><b>5</b> <i class="fas fa-star"></i></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="book">
+                <!-- book cover (img) -->
+                <div class="book-cover">
+                    <img src="books_cover/CAPA-Dear-heart.jpg" alt="">
+                </div>
+                <!-- book information -->
+                <div class="info">
+                    <!-- book title -->
+                    <div class="title" title="Dear heart eu odeio você">
+                        <h1><a href="#" class="title-text">Dear heart eu odeio você</a></h1>
+                    </div>
+                    <!-- owner info -->
+                    <div class="owner-info_date-info">
+                        <div class="owner">
+                            <small class="post-date" style="color: #868686;"><b>15 jul, 2021</b></small>
+                            <small style="color: gray;" title="classificação de: 4,5 de 5 estrelas"><b>3.5</b> <i class="fas fa-star"></i></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="book">
+                <!-- book cover (img) -->
+                <div class="book-cover">
+                    <img src="books_cover/Harry_Potter_Sorc.jpg" alt="">
+                </div>
+                <!-- book information -->
+                <div class="info">
+                    <!-- book title -->
+                    <div class="title" title="Harry Potter and the Sorcerer's stone">
+                        <h1><a href="#" class="title-text">Harry Potter and the Sorcerer's stone</a></h1>
+                    </div>
+                    <!-- owner info -->
+                    <div class="owner-info_date-info">
+                        <div class="owner">
+                            <small class="post-date" style="color: #868686;"><b>15 jul, 2021</b></small>
+                            <small style="color: gray;" title="classificação de: 4,5 de 5 estrelas"><b>4.5</b> <i class="fas fa-star"></i></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="book">
+                <!-- book cover (img) -->
+                <div class="book-cover">
+                    <img src="books_cover/wonder.jpg" alt="">
+                </div>
+                <!-- book information -->
+                <div class="info">
+                    <!-- book title -->
+                    <div class="title" title="Wonder">
+                        <h1><a href="#" class="title-text">Wonder</a></h1>
+                    </div>
+                    <!-- owner info -->
+                    <div class="owner-info_date-info">
+                        <div class="owner">
+                            <small class="post-date" style="color: #868686;"><b>15 jul, 2021</b></small>
+                            <small style="color: gray;" title="classificação de: 4,5 de 5 estrelas"><b>4.5</b> <i class="fas fa-star"></i></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="book">
+                <!-- book cover (img) -->
+                <div class="book-cover">
+                    <img src="books_cover/Historia_da_Ciencia.jpg" alt="">
+                </div>
+                <!-- book information -->
+                <div class="info">
+                    <!-- book title -->
+                    <div class="title" title="A história da Ciência para quem tem pressa">
+                        <h1><a href="#" class="title-text">A história da Ciência para quem tem pressa</a></h1>
+                    </div>
+                    <!-- owner info -->
+                    <div class="owner-info_date-info">
+                        <div class="owner">
+                            <small class="post-date" style="color: #868686;"><b>15 jul, 2021</b></small>
+                            <small style="color: gray;" title="Adicionar comentário"> <a href=""><i class="far fa-comment-alt"></i></a></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="book">
+                <!-- book cover (img) -->
+                <div class="book-cover">
+                    <img src="books_cover/imagem.jpg" alt="">
+                </div>
+                <!-- book information -->
+                <div class="info">
+                    <!-- book title -->
+                    <div class="title" title="Harry Potter e a pedra filosofal">
+                        <h1><a href="#" class="title-text">Harry Potter e a pedra filosofal</a></h1>
+                    </div>
+                    <!-- owner info -->
+                    <div class="owner-info_date-info">
+                        <div class="owner">
+                            <small class="post-date" style="color: #868686;"><b>15 jul, 2021</b></small>
+                            <small style="color: gray;" title="classificação de: 4,5 de 5 estrelas"><b>4.5</b> <i class="fas fa-star"></i></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="book">
+                <!-- book cover (img) -->
+                <div class="book-cover">
+                    <img src="books_cover/Isla-e-O-Final-Feliz.jpg" alt="">
+                </div>
+                <!-- book information -->
+                <div class="info">
+                    <!-- book title -->
+                    <div class="title" title="Isla e o Final Feliz">
+                        <h1><a href="#" class="title-text">Isla e o Final Feliz</a></h1>
+                    </div>
+                    <!-- owner info -->
+                    <div class="owner-info_date-info">
+                        <div class="owner">
+                            <small class="post-date" style="color: #868686;"><b>15 jul, 2021</b></small>
+                            <small style="color: gray;" title="Adicionar comentário" > <a href=""><i class="far fa-comment-alt"></i></a></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="section-title">
+            <hr>
+            <h2>1 - 10 | 432</h2>
+        </div>
+        <div class="pagination-container pagination-container-bottom">
+            <span>
+                <b><a href="#">1</a></b>
+            </span>
+        </div>
+    </div>
+    <div id="ads-container">
+        <div id="ads">Anúncio</div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
