@@ -71,3 +71,15 @@ for (let i = 0; i < commentIcon.length; i++) {
         commentIcon[i].className = "far fa-comment-alt"
     });
 }
+
+
+// ================= close-message-bar ===================
+// vars
+const closeMessageBarButton = document.getElementById('close-message-bar-button');
+const messageBar = document.getElementById('message-bar');
+
+closeMessageBarButton.addEventListener('click', function() {
+    if (messageBar.style.display !== 'none') {
+        messageBar.style.display = 'none';
+    }
+});

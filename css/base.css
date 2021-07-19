@@ -12,6 +12,32 @@ body {
     background-color: #dfdfdf;
 }
 
+/* =============== message bar ==================== */
+#message-bar {
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+#message-bar p {
+    flex-grow: 15;
+    margin: 0;
+    padding: 0;
+}
+
+#message-bar span {
+    flex-grow: 1;
+    font-size: x-large;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.success {
+    background-color: lightgreen;
+}
+
 /* =============== top nav ==================== */
 #top-nav {
     max-width: 100%;
