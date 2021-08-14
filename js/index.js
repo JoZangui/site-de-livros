@@ -39,7 +39,8 @@ const commentIcon = document.getElementsByClassName('fa-comment-alt');
 
 
 function slice_text(element, range) {
-
+    
+    // debugger
     for (let i = 0; i < element.length; i++) {
         // EN: if the title has more than the number of characters specified in "range" then we cut from the 1st character to the character in the position of "range"
         // -----------------------------------------
@@ -53,12 +54,16 @@ function slice_text(element, range) {
 // EN: slice "title" with more than 14 characters
 // ----------------------------------------------
 // PT: recorta "título" com mais de 14 caracteres
-slice_text(bookTitle, 16);
+if (bookTitle) {
+    slice_text(bookTitle, 16);
+}
 
 // EN: slice "username" with more than 9 characters;
 // ----------------------------------------------
 // PT: recorta "nome de usuário" com mais de 9 caracteres
-slice_text(bookOwnerUsername, 9);
+if (bookOwnerUsername) {
+    slice_text(bookOwnerUsername, 9);
+}
 
 // EN: change the comment icon by hovering or removing the mouse over the icon
 // ----------------------------------------------------------------
@@ -78,8 +83,10 @@ for (let i = 0; i < commentIcon.length; i++) {
 const closeMessageBarButton = document.getElementById('close-message-bar-button');
 const messageBar = document.getElementById('message-bar');
 
-closeMessageBarButton.addEventListener('click', function() {
-    if (messageBar.style.display !== 'none') {
-        messageBar.style.display = 'none';
-    }
-});
+if (closeMessageBarButton) {
+    closeMessageBarButton.addEventListener('click', function() {
+        if (messageBar.style.display !== 'none') {
+            messageBar.style.display = 'none';
+        }
+    });
+}

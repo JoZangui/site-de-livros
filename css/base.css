@@ -236,6 +236,7 @@ body {
     max-width: 197px;
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 35px;
     font-weight: bold;
     font-size: 12pt;
